@@ -147,12 +147,6 @@ button {
   cursor: pointer;
 }
 
-/* #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-} */
-
 #histories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
