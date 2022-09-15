@@ -80,7 +80,17 @@
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#blogAccoridion">
               <div class="accordion-body">
-                <!-- Answer 3 -->
+                The event loop is the secret behind JavaScript's asynchronous programming.The event loop concept is very simple. There is an endless
+                loop, where the JavaScript engine waits for tasks, executes them, and then sleeps, waiting for more tasks.
+                <br />
+                When a JavaScript code runs, it go through line by line and piles up the functions on the call stack. If there is an asynchronous
+                function the call stack sends it to the web API. Based on the command received from the call stack, the API starts its own
+                single-threaded operation. Eventually after the operation is completed, it is sent to the Event Queue or Callback Queue.
+                <br />
+                Here comes the event loop. It has one simple job — to monitor the call stack and the callback queue. If the call stack is empty, the
+                event loop will take the first event from the queue and will push it to the call stack. Then the event loop will come back again to
+                the callback queue if there is other event it will be taken to the call stack or if there is no event, the event loop will wait untill
+                there is a new event is put on the event queue. That's how the JavaScript event loop works.
               </div>
             </div>
           </div>
